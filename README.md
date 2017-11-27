@@ -16,6 +16,8 @@ Windows: [Windows Installer](https://getcomposer.org/doc/00-intro.md#installatio
 
 ## Compose Configuration
 
+composer.json
+
 ```json
 {
   "require": {
