@@ -17,7 +17,7 @@ $start = currentTime();
 require_once 'vendor/autoload.php';
 
 $telemetryClient = new \ApplicationInsights\Telemetry_Client();
-$telemetryClient->getContext()->setInstrumentationKey('561e13ff-c516-46d7-b415-92457a30bfdb');
+$telemetryClient->getContext()->setInstrumentationKey('1f1ded96-c71e-41cd-ae0b-87b785f43c5b');
 
 
 
@@ -112,7 +112,7 @@ $telemetryClient->trackRequest("department.php", "department.php", time(), $tota
 
 $startFlush = currentTime();
 
-// $telemetryClient->flush();
+$telemetryClient->flush();
 
 $endFlush = currentTime();
 $totalFlush = round(($endFlush - $startFlush), 4) * 1000;
